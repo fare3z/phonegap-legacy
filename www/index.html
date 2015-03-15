@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Web App</title>
+<link href="jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script src="submit.js" type="text/javascript"></script>
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Fare4z</h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+			<li><a href="#page2">Page Two</a></li>
+            <li><a href="#page3">Page Three</a></li>
+			<li><a href="#page4">Page Four</a></li>
+		</ul>		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page2">
+	<div data-role="header">
+		<h1>Page Two</h1>
+	
+
+	<form id="myForm" method="post" action="http://fare4z.my/ajax-form-submit.php" data-ajax="false">
+ <table width="572" height="359" border="2">
+	      <tr>
+	        <td width="1" rowspan="9">&nbsp;</td>
+	        <td width="270"><strong>Maklumat akaun</strong></td>
+	        <td width="6" rowspan="12">&nbsp;</td>
+	        <td width="265"><strong>Maklumat peribadi</strong></td>
+          </tr>
+	      <tr>
+	        <td bgcolor="#99CCCC">No Pekerja (Required)</td>
+	        <td bgcolor="#99CCCC">Nama (Required)</td>
+          </tr>
+	      <tr>
+	        <td><input name="staffid" type="text" id="staffid"  size="45" /></td>
+	        <td><input name="name" type="text" id="name"  size="45" /></td>
+          </tr>
+	      <tr>
+	        <td bgcolor="#99CCCC">Alamat Emel (Required)</td>
+	        <td bgcolor="#99CCCC">Nombor Kad Pengenalan (Required)</td>
+          </tr>
+	      <tr>
+	        <td><input name="email" type="text" id="email" size="45" /></td>
+	        <td><input name="ic" type="text" id="ic" size="45" /></td>
+          </tr>
+	      <tr>
+	        <td bgcolor="#99CCCC">Kata Laluan (Required)</td>
+	        <td bgcolor="#99CCCC">Alamat surat menyurat</td>
+          </tr>
+	      <tr>
+	        <td><input name="pwd1" type="password" id="pwd1" size="45" /></td>
+	        <td><input name="address" type="text" id="address" size="45" /></td>
+          </tr>
+	      <tr>
+	        <td bgcolor="#99CCCC">Sahkan Kata laluan (Required)</td>
+	        <td bgcolor="#99CCCC">Pangkat</td>
+          </tr>
+	      <tr>
+	        <td><input name="pwd2" type="password" id="pwd2" size="45" /></td>
+	        <td><label for="position"></label>
+	          <select name="position" id="position">
+	            <option value="Pengetua">Pengetua</option>
+	            <option value="Penolong Kanan">Penolong Kanan</option>
+	            <option value="Guru biasa">Guru biasa</option>
+	            <option value="Guru Ganti">Guru Ganti</option>
+              </select></td>
+          </tr>
+	      <tr>
+	        <td colspan="2" rowspan="3">&nbsp;</td>
+	        <td bgcolor="#99CCCC">Negeri</td>
+          </tr>
+	      <tr>
+	        <td><select name="state" id="state">
+	          <option value="Johor">Johor</option>
+	          <option value="Kedah">Kedah</option>
+	          <option value="Kelantan" selected="selected">Kelantan</option>
+	          <option value="Melaka">Melaka</option>
+	          <option value="Negeri 9">Negeri 9</option>
+	          <option value="Pahang">Pahang</option>
+	          <option value="Perak">Perak</option>
+	          <option value="Perlis">Perlis</option>
+	          <option value="Pulau Pinang">Pulau Pinang</option>
+	          <option value="Sabah">Sabah</option>
+	          <option value="Sarawak">Sarawak</option>
+	          <option value="Selangor">Selangor</option>
+	          <option value="Terengganu">Terengganu</option>
+	          </select></td>
+          </tr>
+	      <tr>
+	        <td><blockquote>
+	          <p align="right">
+	            <input type="submit" name="submit" id="submit" value="Bina akaun" />
+              </p>
+	          </blockquote>
+	          <label for="state">
+	          <div align="right"></div>
+	          </label></td>
+          </tr>
+        </table>
+		<input name="submit" type="submit" id="submit" value="Save">
+	</form>
+
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page3">
+	<div data-role="header">
+		<h1>Page Three</h1>
+	</div>
+	<div data-role="content">	
+		<form name="ajax" id="ajax" action="/ajax-form-submit.php" method="POST">
+First Name: <input type="text" name="fname" value =""/> <br/>
+Last Name: <input type="text" name="lname" value ="" /> <br/>
+Email : <input type="text" name="email" value=""/> <br/>
+<input name="Submit" type="submit" value="Submit">
+</form>		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+<div data-role="page" id="page4">
+	<div data-role="header">
+		<h1>Page Four</h1>
+	</div>
+	<div data-role="content">	
+		Content		
+	</div>
+	<div data-role="footer">
+		<h4>Page Footer</h4>
+	</div>
+</div>
+
+</body>
+</html>
