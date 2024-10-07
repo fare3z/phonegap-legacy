@@ -1,9 +1,9 @@
 <?php
 
-$server = "mysql.main-hosting.com";
-$username = "u102252830_root";
-$password = "123456";
-$database = "u102252830_sms";
+$server = "";
+$username = "";
+$password = "";
+$database = "";
 
 $con = mysqli_connect($server, $username, $password);
 
